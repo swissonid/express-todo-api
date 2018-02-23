@@ -1,6 +1,6 @@
 {
-  "name": "express-todo-api",
-  "version": "1.1.1",
+  "name": "teaching-express-todo-api",
+  "version": "1.1.1.1",
   "description": "A todo application api",
   "main": "index.js",
   "bin": {
@@ -38,10 +38,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/wesleytodd/express-todo-api.git"
+    "url": "git+https://github.com/swissonid/express-todo-api"
   },
   "bugs": {
-    "url": "https://github.com/wesleytodd/express-todo-api/issues"
+    "url": "https://github.com/swissonid/express-todo-api/issues"
   },
-  "homepage": "https://github.com/wesleytodd/express-todo-api#readme"
+  "homepage": "https://github.com/swissonid/express-todo-api#readme"
 }
