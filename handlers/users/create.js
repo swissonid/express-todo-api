@@ -8,21 +8,16 @@ module.exports = function (options) {
 	var store = options.store;
 
 	return function (req, res) {
-		if (!req.body || !req.body.username) {
-			return sendError(res, 400, 'Missing or invalid user');
+		if (!req.body || !req.body.email) {
+			return sendError(res, 400, 'Missing email adress');
 		}
 
-		req.body.status = req.body.status || 'active';
-
-		// Verify that user are enabled and exists
-		if (!status.valid(req.body.status)) {
-			return sendError(res, 400, 'Invalid status: ' + req.body.status);
-		}
+		
 
 		// user object
 		var user = {
 			id: uuid.v4(),
-			username: req.body.username,
+			email: req.body.username,
 			displayName: req.body.displayName,
 			created: Date.now()
 		};
